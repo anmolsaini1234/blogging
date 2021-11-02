@@ -1,0 +1,64 @@
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.input {
+    flex: 2;
+    border: none;
+    height: 8vh;
+}
+
+.input:focus {
+    border-radius: 50px;
+    transition: 300ms;
+    border: 1px groove black;
+}
+
+.button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #303030;
+    background: #303030;
+    color: white;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.button:hover {
+    background-color: #666464;
+    transition: 1000ms;
+}
+.chatBox {
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+.singleComment > p {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    white-space: wrap;
+    max-width: 100%;
+}
+
+.singleComment {
+    box-shadow: 0px 2px 5px gray;
+    padding: 20px;
+
+}
+
+.singleComment > h3 {
+ font-weight: 500;
+}
+
+
+@media screen and (max-width: 480px) {
+    .singleComment > p {
+        font-size: 14px;
+    }
+}
